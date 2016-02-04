@@ -1,13 +1,15 @@
 export default class ArrowChanger{
   constructor($core) {
+    let slides = $core.getModule('slides', '_');
+
     document.onkeydown = _=> {
       if (_.which == 37 || _.which == 39) {
         switch (_.which) {
           case 37:
-            $core.modules.slides.change(-1);
+            slides.change(-1);
             break;
           case 39:
-            $core.modules.slides.change(1);
+            slides.change(1);
             break;
         }
 
