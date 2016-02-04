@@ -1,0 +1,19 @@
+{
+  "name": "arrow-changer",
+  "version": "0.1.0",
+  "description": "Change slides with keyboard arrows",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sledjs/arrow-changer.git"
+  },
+  "author": "Damian Martyniak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sledjs/arrow-changer/issues"
+  },
+  "homepage": "https://github.com/sledjs/arrow-changer#readme"
+}
