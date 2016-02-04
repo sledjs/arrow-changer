@@ -10,9 +10,11 @@ export default class ArrowChanger{
             $core.modules.slides.change(1);
             break;
         }
-  
-        if ($core.modules.autoSlider) 
-          $core.modules.autoSlider.restart(5000);
+
+        $core.module('auto-slider')
+          .then(module =>
+            module._.restart(5000)
+          ).catch(_ => {});
       }
     };
   }
