@@ -1,20 +1,18 @@
 module.exports = class Keys{
   constructor($core) {
+    let slides = $core.module('slides');
     this.name = 'keys';
-    this.slides = $core.module('slides');
+
+    this.keys = {
+      37: slides.prev,
+      39: slides.next,
+    };
 
     document.addEventListener('keydown', key =>
       this.changeSlide.call(this, key));
   }
 
   changeSlide(key) {
-    switch (key.which) {
-      case 37:
-        this.slides.prev();
-        break;
-      case 39:
-        this.slides.next();
-        break;
-    }
+    this.keys[key.which]();
   }
 };

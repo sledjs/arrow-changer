@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/sledjs/arrow-changer#readme",
   "peerDependencies": {
-    "@sled/slides": "^0.3.0"
+    "@sled/slides": "^0.3.1"
   }
 }
