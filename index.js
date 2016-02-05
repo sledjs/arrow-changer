@@ -12,6 +12,10 @@ module.exports = class Keys{
       this.changeSlide.call(this, key));
   }
 
+  set(which, cb) {
+    this.keys[which] = cb;
+  }
+
   changeSlide(key) {
     this.keys[key.which]();
   }
