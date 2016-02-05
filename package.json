@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sledjs/arrow-changer/issues"
   },
-  "homepage": "https://github.com/sledjs/arrow-changer#readme"
+  "homepage": "https://github.com/sledjs/arrow-changer#readme",
+  "peerDependencies": {
+    "@sled/slides": "^0.3.0"
+  }
 }

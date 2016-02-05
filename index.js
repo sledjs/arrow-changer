@@ -1,16 +1,20 @@
-export default class ArrowChanger{
+module.exports = class ArrowChanger{
   constructor($core) {
-    let slides = $core.getModule('slides', '_');
+    this.name = 'arrow-changer';
+    this.slides = $core.module('slides');
 
-    document.addEventListener('keydown', key => {
-      switch (key.which) {
-        case 37:
-          slides.change(-1);
-          break;
-        case 39:
-          slides.change(1);
-          break;
-      }
-    });
+    document.addEventListener('keydown', key =>
+      this.changeSlide.call(this, key));
   }
-}
+
+  changeSlide(key) {
+    switch (key.which) {
+      case 37:
+        this.slides.prev();
+        break;
+      case 39:
+        this.slides.next();
+        break;
+    }
+  }
+};
