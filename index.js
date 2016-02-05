@@ -17,6 +17,8 @@ module.exports = class Keys{
   }
 
   changeSlide(key) {
-    this.keys[key.which]();
+    let action = this.keys[key.which];
+
+    action && action();
   }
 };
