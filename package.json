@@ -1,5 +1,5 @@
 {
-  "name": "arrow-changer",
+  "name": "@sled/keys",
   "version": "1.0.0",
   "description": "Change slides with keyboard arrows",
   "main": "index.js",

@@ -1,6 +1,6 @@
 module.exports = class ArrowChanger{
   constructor($core) {
-    this.name = 'arrow-changer';
+    this.name = 'keys';
     this.slides = $core.module('slides');
 
     document.addEventListener('keydown', key =>
